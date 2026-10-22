@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran UKM</title>
+</head>
+<body>
+  <!-- Dibuat oleh: Naila Aulia | 22 Oktober 2026 -->
+  <header>
+    <h1>Formulir Pendaftaran UKM</h1>
+    <nav>
+      <a href="data.html">Data</a> |
+      <a href="form.html">Formulir UKM</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <p>
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Naila Aulia" required>
+      </p>
+
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+      </p>
+
+      <p>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required>
+      </p>
+
+      <p>
+        <label for="umur">Umur (17&ndash;40 tahun):</label><br>
+        <input type="number" id="umur" name="umur" min="17" max="40" placeholder="Contoh: 19" required>
+      </p>
+
+      <p>
+        <label for="tgl">Tanggal Lahir:</label><br>
+        <input type="date" id="tgl" name="tgl" required>
+      </p>
+
+      <fieldset>
+        <legend>Jenis Kelamin</legend>
+        <input type="radio" id="pr" name="gender" value="perempuan" required>
+        <label for="pr">Perempuan</label>
+        <input type="radio" id="lk" name="gender" value="laki-laki">
+        <label for="lk">Laki-laki</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Minat (boleh pilih lebih dari satu)</legend>
+        <input type="checkbox" id="m1" name="minat" value="programming">
+        <label for="m1">Pemrograman</label><br>
+        <input type="checkbox" id="m2" name="minat" value="desain">
+        <label for="m2">Desain</label><br>
+        <input type="checkbox" id="m3" name="minat" value="jaringan">
+        <label for="m3">Jaringan</label>
+      </fieldset>
+
+      <p>
+        <label for="ukm">Pilihan UKM:</label><br>
+        <select id="ukm" name="ukm" required>
+          <option value="">-- Pilih UKM --</option>
+          <option value="robotik">Robotik</option>
+          <option value="fotografi">Fotografi</option>
+          <option value="musik">Musik</option>
+          <option value="olahraga">Olahraga</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="alasan">Alasan Bergabung:</label><br>
+        <textarea id="alasan" name="alasan" rows="4" cols="40" placeholder="Tuliskan alasan Anda..." required></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Naila Aulia &ndash; NPM 2510010422</p>
+  </footer>
+</body>
+</html>
